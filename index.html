@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="uls" style="background-color: #4169e1;">
+        <a href="highscore.html">
+        <span id="timer" class="right-time">Time: 0</span>    
+    </header>
+    <!---Code Quiz Home Screen--->
+    <div class="container">
+        <div id="kickoff">
+            <h2>Code Quiz Challenge!</h2>
+            <p>Try to answer the following code-related questions within the time limit</p>
+            <br />
+            <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+            <br />
+            <button id="startbtn">Start Quiz</button>
+         </div>
+
+         <!---Questions for user-->
+         <div id="quiz">
+            <div id="question">Question</div>
+            <ul id="answer">
+                <li class="answerOption">1.</li>
+                <li class="answerOption">2.</li>
+                <li class="answerOption">3.</li>
+                <li class="answerOption">4.</li>
+            </ul>
+            <p class="feedback"></p>
+         </div>
+
+         <!---Final Screen--->
+         <div id="final-submit">
+             <h2>Quiz is over!</h2>
+             <div id="user-score"></div>
+             <form class="user-form">
+                <label for="new-score">Enter your name:</label>
+                <input type="text" id="userName">
+                <button type="button">Submit</button>
+            </form>
+         </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
