@@ -1,0 +1,52 @@
+body {
+    background-color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    color: #4169e1;
+}
+
+span {
+    float: right;
+    color: #4169e1;
+}
+
+h2 {
+    color: #000000;
+    text-align:center;
+}
+
+p {
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+}
+
+li {
+    color: #4169e1;
+    list-style-type: none;
+
+}
+
+ol {
+    list-style: none;
+    counter-increment: li;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  button {
+      background-color: #4169e1;
+      border-radius: 5px;  
+      border: 3px solid #4169e1;
+      
+  }
