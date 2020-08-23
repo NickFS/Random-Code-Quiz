@@ -7,44 +7,54 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header class="uls">
-        <a href="highscore.html">View high scores</a>
-        <span id="timer" class="right-time">Time: 0</span>    
-    </header>
-     
-    <!---Code Quiz Home Screen--->
-    <div class="container">
-        <div id="kickoff">
-            <h2>Code Quiz Challenge!</h2>
-            <p>Try to answer the following code-related questions within the time limit</p>
-            <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
-            <br />
-            <button id="startbtn">Start Quiz</button>
-         </div>
+    <div id="uls">
+        <div id="info">
+          <button id="scores" href="">View high scores</button>
+          <div id="timer"><p>Time: <span id="time">0</span></p></div>
+        </div>
+      </div>
+        
+      
+      <div id="newWrapper">
+        <section id="intro">
+          <h1>Coding Quiz Challenge</h1>
+          <p>Try to answer the following code-related questions within the time limit.
+            Keep in mind that incorrect answers will penalize your score/time by ten seconds.
+          </p>
+          <button>Start Quiz</button>
+      
+        </section>
 
-         <!---Questions for user-->
-         <div id="quiz">
-            <div id="question">Question</div>
-            <ul id="answer">
-                <li class="answerOption">1.</li>
-                <li class="answerOption">2.</li>
-                <li class="answerOption">3.</li>
-                <li class="answerOption">4.</li>
-            </ul>
-            <p class="feedback"></p>
-         </div>
-
-         <!---Final Screen--->
-         <div id="final-submit">
-             <h2>Quiz is over!</h2>
-             <div id="user-score"></div>
-             <form class="user-form">
-                <label for="new-score">Enter your name:</label>
-                <input type="text" id="userName">
-                <button type="button" class="submitBtn">Submit</button>
-            </form>
-         </div>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+        <!---Quiz Questions--->
+        <section id="quizHolder" class="hide">
+          <p id="title"></p>
+          <!-- Buttons to accept question values-->
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <div id="scoreIndicator" class="invisible">
+            <p>&nbsp;</p>
+          </div>
+        </section>
+      
+        <!--Finished Quiz Page-->
+        <section id="finish" class="hide">
+          <h1>All Done</h1>
+          <p>Your final score is&nbsp;<span id="score"></span></p>
+          <div id="records">
+            <p>Enter initials: </p><input id="initials" type="text"> <button>Submit</button>
+          </div>
+          <div id="errorIndicator" class="invisible">
+            <p>&nbsp;</p>
+          </div>
+        </section>
+      
+        <section id="highScores" class="hide">
+          <h1>High Scores</h1>
+          <div>
+      
+          </div>
+          <button id="reset">Go Back</button> <button id="clearScores">Clear Highscores</button>
+        </section>
+      </div>
