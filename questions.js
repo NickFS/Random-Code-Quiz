@@ -9,7 +9,7 @@ var questions = [
     {
         title: "Who is making the Web standards?",
         choices: ["Mozilla", "Microsoft", "Google", "The World Wide Web Consortium"],
-        answer: "The World Wide Web Consortium."
+        answer: "The World Wide Web Consortium"
     },
 
     {
@@ -19,9 +19,9 @@ var questions = [
     }, 
 
     {
-        title: "Inside which HTML element do we put the JavaScript?",
-        choices: ["<javascript>", "<script>", "<scripting>", "<js>"],
-        answer: "<script>"
+        title: "Choose the correct HTML element for the largest heading:",
+        choices: ["h6", "heading", "h1", "head"],
+        answer: "h1"
     },
 
     {

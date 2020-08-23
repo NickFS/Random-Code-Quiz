@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		queryElement('#quizHolder button:nth-of-type(4)').innerHTML = `4. ${questions[Counts].choices[3]}`;
 	}
 
-	//Rolls through the question and has a parameter to control the right or wrong text.
+	//Rolls through the questions and has a parameter to control the right or wrong text.
 	let quizUpdate = (answerCopy) => {
 		queryElement('#scoreIndicator p').innerHTML = answerCopy;
 		queryElement('#scoreIndicator').classList.remove('invisible', scoreIndicator());
@@ -119,12 +119,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			if (this.innerHTML.substring(3, this.length) === questions[Counts].answer) {
 				score = score + 1;
 				Counts = Counts + 1;
-				quizUpdate("Correct");
+				quizUpdate("Correct!");
 			}else{
 				// Handles events if a question is answered incorrectly.
 				time = time - 10;
 				Counts = Counts + 1;
-				quizUpdate("Wrong");
+				quizUpdate("Wrong!");
 			}
 		});
 	});
