@@ -9,7 +9,7 @@ var questions = [
     {
         title: "Who is making the Web standards?",
         choices: ["Mozilla", "Microsoft", "Google", "The World Wide Web Consortium"],
-        answer: "The World Wide Web Consortium"
+        answer: "The World Wide Web Consortium."
     },
 
     {
@@ -34,6 +34,6 @@ var questions = [
         title: "Which operator is used to assign a value to a variable?",
         choices: ["x", "!", "&", "="],
         answer: "="
-    }
+    },
 ];
 
