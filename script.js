@@ -51,6 +51,42 @@ var questions = [
     }
 ];
 
-Function(){
-    
+function startTimer() {
+    //change welcome message with questions
+    document.getElementById("kickoff");
+    document.getElementById("quiz");
+
+    //time set, count down begins
+    setTimer();
+    //create questions
+    makeQuestions();
+}
+
+function setTimer(){
+    var countdown = setInterval(function () {
+        timeLeft--;
+        timerEl.textContent = "Time: " + timeLeft;
+
+        if(timeLeft === 0 || questionNumber === questions.length){
+            clearInterval(countdown);
+            setTimeout(displayScore, 500),
+        }
+    }, 1000);
+}
+
+funbction makeQuestions(){
+    questionNumber++;
+    answer = questions[questionNumber].answer
+
+    questionsList.textContent = questions[questionNumber].title;
+    answerOptions.innerHTML = "";
+
+    var choices = questions[questionNumber].choices
+
+    for (var i = 0; i < choices.length; i++)
+    {
+        var nextChoice = document.createElement("button");
+        nextChoice.textContent = choices[i]
+        answerBtn = answerChoices.appendChhild(nextChoice).setAttribute("class");
+    }
 }
